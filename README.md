@@ -19,5 +19,3 @@ npx cypress open
 Feature files go in `cypress\integration`.
 
 Step files go in `cypress\support\step_definitions`.
-
-### Nothing

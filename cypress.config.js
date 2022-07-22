@@ -2,6 +2,7 @@ const {defineConfig} = require("cypress");
 
 module.exports = defineConfig({
   e2e: {
-    specPattern: "**/*.feature"
+    specPattern: "**/*.feature",
+    supportFile: false
   }
 })

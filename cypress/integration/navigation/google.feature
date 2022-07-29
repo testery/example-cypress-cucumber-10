@@ -8,7 +8,7 @@ Feature: Google
 
   @web
   @duplicate
-  Scenario: User Navigates to Google 1
+  Scenario: User Navigates to Google
     Given I navigate to "https://www.google.com"
     Then the page title is 'Google'
 

@@ -21,6 +21,7 @@
     "supertest": "6.2.4"
   },
   "cypress-cucumber-preprocessor": {
-    "nonGlobalStepDefinitions": true
+    "nonGlobalStepDefinitions": true,
+    "stepDefinitions": "./integration"
   }
 }

@@ -3,6 +3,7 @@ import { Given, Then } from "cypress-cucumber-preprocessor/steps";
 Given("I navigate to {string}", (url) => {
   cy.log(url);
   cy.visit(url);
+  cy.screenshot();
 });
 
 Then("wait for {int} seconds", (time) => {

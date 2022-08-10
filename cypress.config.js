@@ -7,6 +7,7 @@ module.exports = defineConfig({
       on('file:preprocessor', cucumber())
     },
     specPattern: "**/*.feature",
-    supportFile: false
+    supportFile: false,
+    pageLoadTimeout: 120000
   }
 })

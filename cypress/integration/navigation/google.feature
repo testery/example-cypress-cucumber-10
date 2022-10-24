@@ -1,18 +1,6 @@
 Feature: Google
 
   @web
-  @BeforeTesteryRun
-  Scenario: Setup Step
-    Given I navigate to "https://www.google.com"
-    Then I print text "I am setting stuff up"
-
-  @web
-  @AfterTesteryRun
-  Scenario: Teardown Step
-    Given I navigate to "https://www.google.com"
-    Then I print text "I am doing the teardown process"
-
-  @web
   @hasDuplicate
   Scenario: User Navigates to Google
     Given I navigate to "https://www.google.com"

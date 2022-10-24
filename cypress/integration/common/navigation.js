@@ -13,3 +13,7 @@ Then("wait for {int} seconds", (time) => {
 Then("the page title is {string}", (title) => {
   cy.title().should("eq", title);
 });
+
+Then("I print text {string}", (stringToPrint) => {
+  console.log(stringToPrint);
+});

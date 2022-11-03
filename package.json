@@ -4,7 +4,8 @@
   "description": "Sample project with Cypress and Cucumber",
   "main": "index.js",
   "scripts": {
-    "test": "npx cypress run --spec **/*.feature"
+    "test": "npx cypress run --spec **/*.feature",
+    "testeryPreRunScript": "sudo curl -LsS https://download.civicrm.org/cv/cv.phar -o /usr/local/bin/cv && sudo chmod +x /usr/local/bin/cv"
   },
   "repository": {
     "type": "git",

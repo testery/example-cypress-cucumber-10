@@ -4,6 +4,7 @@ Feature: Google
   @BeforeTesteryRun
   Scenario: Setup Step
     Given I navigate to "https://dev.testery.io"
+    Then wait for 60 seconds
     Then I print text "I am setting stuff up"
 
   @web

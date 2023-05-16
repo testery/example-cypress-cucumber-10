@@ -1,6 +1,6 @@
 name: Testery Tests
 
-on: [push,pr]
+on: [pull_request]
 
 jobs:
   build:

@@ -15,38 +15,18 @@ jobs:
         uses: actions/setup-python@v1
         with:
           python-version: "3.x"
-      - name: Install dependencies
+      - name: Install Testery CLI
         run: |
           python -m pip install --upgrade pip
           pip install testery --upgrade
-          sudo npm install -g localtunnel
-      - name: Start Web App
+      - name: Run Testery tests
         run: |
-          cd web-app
-          npm install
-          npm start &
-
-          ps -Af | grep node
-      - name: Run Testery Tests
-        run: |
-          # Start localtunnel and get url.
-          echo "Starting local tunnel..."
-          lt -p 3000 > url.txt &
-
-          sleep 5
           
-          cat url.txt
-
-          TEST_URL=`cat url.txt | sed -r 's/your url is: (.*)/\1/'`
-
-          echo "Test URL: $TEST_URL"
+          echo "Running Testery tests..."
           
-
           # Create test run.
           testery create-test-run --token "$TESTERY_TOKEN" --include-tags "smoke" \
               --variable "TEST_URL=${TEST_URL}" \
               --git-ref "$GITHUB_SHA" --project "example-cypress-cucumber-10" --environment "testery-dev" \
               --wait-for-results
 
-          # Stop localtunnel.
-          ps -Af | grep "lt -p" | grep -v grep | awk '{print $2}' | xargs kill -STOP

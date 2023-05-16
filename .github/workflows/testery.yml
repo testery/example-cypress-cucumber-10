@@ -25,8 +25,10 @@ jobs:
           echo "Running Testery tests..."
           
           # Create test run.
-          testery create-test-run --token "$TESTERY_TOKEN" --include-tags "smoke" \
-              --variable "TEST_URL=${TEST_URL}" \
-              --git-ref "$GITHUB_SHA" --project "example-cypress-cucumber-10" --environment "testery-dev" \
+          testery create-test-run \
+              --token "$TESTERY_TOKEN" \
+              --git-ref "$GITHUB_SHA" \
+              --project "example-cypress-cucumber-10" \
+              --environment "testery-dev" \
               --wait-for-results
 

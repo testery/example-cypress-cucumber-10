@@ -28,7 +28,7 @@ jobs:
           testery create-test-run \
               --token "$TESTERY_TOKEN" \
               --git-ref "$GITHUB_SHA" \
-              --project "example-cypress-cucumber-10" \
+              --project-key "example-cypress-cucumber-10" \
               --environment "testery-dev" \
               --wait-for-results
 

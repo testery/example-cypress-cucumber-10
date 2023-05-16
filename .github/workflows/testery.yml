@@ -6,8 +6,8 @@ jobs:
   build:
     runs-on: ubuntu-latest
 
-    env:
-      TESTERY_TOKEN: ${{ secrets.TesteryTokenProd }}
+    # env:
+    #   TESTERY_TOKEN: ${{ secrets.TesteryTokenProd }}
 
     steps:
       - uses: actions/checkout@v2
@@ -29,14 +29,14 @@ jobs:
           echo "testery create-test-run \
               --token "$TESTERY_TOKEN" \
               --git-ref "$GITHUB_SHA" \
-              --project-key "example-cypress-cucumber-10" \
+              --project "example-cypress-cucumber-10" \
               --environment "testery-dev" \
               --wait-for-results"
 
           testery create-test-run \
               --token "$TESTERY_TOKEN" \
               --git-ref "$GITHUB_SHA" \
-              --project-key "example-cypress-cucumber-10" \
+              --project "example-cypress-cucumber-10" \
               --environment "testery-dev" \
               --wait-for-results
 

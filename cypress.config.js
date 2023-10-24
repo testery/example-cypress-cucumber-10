@@ -8,6 +8,8 @@ module.exports = defineConfig({
     },
     specPattern: "**/*.feature",
     supportFile: false,
-    pageLoadTimeout: 120000
+    pageLoadTimeout: 120000,
+    viewportHeight: 1080,
+    viewportWidth: 1920,
   }
 })

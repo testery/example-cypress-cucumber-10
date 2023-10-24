@@ -1,6 +1,7 @@
 import { Given, Then } from "cypress-cucumber-preprocessor/steps";
 
 Given("I navigate to {string}", (url) => {
+  cy.viewport(1920, 1080);
   cy.log(url);
   cy.visit(url);
   cy.screenshot();

@@ -19,6 +19,7 @@ Feature: Google
     Then the page title is 'Google Bad'
 
   @web
+  @scenarioTable
   Scenario Outline: Navigating to several sites
     Given I navigate to '<site>'
     Then the page title is '<title>'

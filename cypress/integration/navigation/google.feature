@@ -19,12 +19,14 @@ Feature: Google
     Then the page title is 'Google Bad'
 
   @web
-  @scenarioTable
+    @scenarioTable
   Scenario Outline: Navigating to several sites
     Given I navigate to '<site>'
     Then the page title is '<title>'
 
     Examples:
-      | site                    | title                              |
-      | https://www.apple.com/  | Apple                              |
-      | https://duckduckgo.com/ | DuckDuckGo — Privacy, simplified.  |
+      | site                    | title                                                                    |
+      | https://www.apple.com/  | Apple                                                                    |
+      | https://duckduckgo.com/ | DuckDuckGo — Privacy, simplified.                                        |
+      | https://google.com/     | Google                                                                   |
+      | https://yahoo.com/      | Yahoo \| Mail, Weather, Search, Politics, News, Finance, Sports & Videos |

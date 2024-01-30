@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "npx cypress run --spec **/*.feature",
-    "testeryPreRunScript": "apt-get wl-clipboard"
+    "testeryPreRunScript": "apt-get install wl-clipboard"
   },
   "repository": {
     "type": "git",

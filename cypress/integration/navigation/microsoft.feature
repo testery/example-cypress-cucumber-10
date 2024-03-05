@@ -1,6 +1,6 @@
 Feature: Microsoft
 
   Scenario: User Navigates to Microsoft
-    Given I navigate to "https://www.microsoft.com/en-us"
+    Given I navigate to "https://testery.com"
     Then wait for 2 seconds
-    Then the page title is 'Microsoft – Cloud, Computers, Apps & Gaming'
+    Then the page title is 'Testery: modern test orchestration'

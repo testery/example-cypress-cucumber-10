@@ -28,14 +28,14 @@ jobs:
 
           echo "testery create-test-run \
               --token "$TESTERY_TOKEN" \
-              --git-ref "$GITHUB_SHA" \
+              --git-ref "${{github.event.pull_request.head.sha}}" \
               --project "example-cypress-cucumber-10" \
               --environment "testery-dev" \
               --wait-for-results"
 
           testery create-test-run \
               --token "${{ secrets.TESTERY_TOKEN }}" \
-              --git-ref "$GITHUB_SHA" \
+              --git-ref "${{github.event.pull_request.head.sha}}" \
               --project "example-cypress-cucumber-10" \
               --environment "testery-dev" \
               --wait-for-results

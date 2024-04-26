@@ -1,5 +1,5 @@
 import { Given, Then } from "cypress-cucumber-preprocessor/steps";
-//testing
+//testing1
 Given("I navigate to {string}", (url) => {
   cy.log(url);
   cy.visit(url);

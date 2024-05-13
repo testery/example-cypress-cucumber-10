@@ -23,5 +23,5 @@ jobs:
               --git-ref "${{github.event.pull_request.head.sha}}" \
               --git-branch "${{ github.event.pull_request.head.ref }}" \
               --project "example-cypress-cucumber-10" \
-              --environment "testery-dev" \
+              --environment "github-actions" \
               --wait-for-results

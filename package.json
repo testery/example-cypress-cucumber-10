@@ -4,8 +4,7 @@
   "description": "Sample project with Cypress and Cucumber",
   "main": "index.js",
   "scripts": {
-    "test": "npx cypress run --spec **/*.feature",
-    "testeryPreRunScript": "apt-get install wl-clipboard"
+    "test": "npx cypress run --spec **/*.feature"
   },
   "repository": {
     "type": "git",
@@ -13,15 +12,14 @@
   },
   "author": "Testery",
   "license": "none",
-  "devDependencies": {
-    "chai": "4.3.6",
-    "cypress": "10.11.0",
-    "cypress-cucumber-preprocessor": "4.3.1",
+  "dependencies": {
+    "@badeball/cypress-cucumber-preprocessor": "^20.0.5",
+    "@bahmutov/cypress-esbuild-preprocessor": "^2.2.0",
+    "chai": "5.1.1",
+    "cypress": "13.9.0",
     "faker": "^5.5.3",
     "seedrandom": "^3.0.5",
-    "supertest": "6.2.4"
-  },
-  "cypress-cucumber-preprocessor": {
-    "nonGlobalStepDefinitions": true
+    "supertest": "6.2.4",
+    "typescript": "^5.4.5"
   }
 }

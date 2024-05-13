@@ -4,7 +4,8 @@
   "description": "Sample project with Cypress and Cucumber",
   "main": "index.js",
   "scripts": {
-    "test": "npx cypress run --spec **/*.feature"
+    "test": "npx cypress run --spec **/*.feature",
+    "testeryPreRunScript": "npm install -g npm"
   },
   "repository": {
     "type": "git",

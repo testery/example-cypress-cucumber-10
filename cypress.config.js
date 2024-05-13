@@ -38,6 +38,7 @@ module.exports = defineConfig({
   e2e: {
     setupNodeEvents,
     specPattern: 'cypress/e2e/features/*.feature',
+    supportFile: false
   },
   pageLoadTimeout: 120000,
   defaultCommandTimeout: 30000,

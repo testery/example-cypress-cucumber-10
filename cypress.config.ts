@@ -21,6 +21,15 @@ export default defineConfig({
         })
       );
 
+      on('before:browser:launch', (browser = {}, launchOptions) => {
+        if (browser.name === 'chrome') {
+          launchOptions.args.push(`--window-size=1920,1080`)
+          launchOptions.args.push('--force-device-scale-factor=1')
+        }
+        return launchOptions
+      });
+    
+
       // Make sure to return the config object as it might have been modified by the plugin.
       return config;
     },

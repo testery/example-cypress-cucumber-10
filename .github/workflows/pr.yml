@@ -1,0 +1,23 @@
+name: Testery Tests
+
+on:
+  pull_request:
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Install Testery CLI
+        run: |
+          python -m pip install --upgrade pip
+          pip install testery --upgrade
+      - name: Run Testery tests
+        run: |
+          # testery create-test-run \
+          #     --token "${{ secrets.TESTERY_TOKEN }}" \
+          #     --git-ref "${{github.event.pull_request.head.sha}}" \
+          #     --git-branch "${{ github.event.pull_request.head.ref }}" \
+          #     --project "example-cypress-cucumber-10" \
+          #     --environment "github-actions" \

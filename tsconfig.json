@@ -3,7 +3,9 @@
       "target": "ES5",
       "lib": ["ES5", "dom"],
       "types": ["cypress", "node"],
-      "esModuleInterop": true
+      "esModuleInterop": true,
+      "moduleResolution": "Node16",
+      "module": "Node16"
     },
-    "include": ["**/*.ts", "cypress.config.js"]
+    "include": ["**/*.ts", "cypress.config.ts"]
 }

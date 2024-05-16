@@ -3,7 +3,6 @@
       "target": "ES5",
       "lib": ["ES5", "dom"],
       "types": ["cypress", "node"],
-      "esModuleInterop": true,
       "moduleResolution": "Node16",
       "module": "Node16"
     },

@@ -20,8 +20,8 @@
     "@bahmutov/cypress-esbuild-preprocessor": "2.2.0",
     "@typescript-eslint/eslint-plugin": "^7.9.0",
     "@typescript-eslint/parser": "^7.9.0",
-    "chai": "5.1.1",
-    "cypress": "12.17.4",
+    "reflect-metadata": "^0.2.2",
+    "cypress": "13.9.0",
     "esbuild": "0.21.2",
     "eslint": "^8.57.0",
     "typescript": "5.4.5"

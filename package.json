@@ -3,8 +3,10 @@
   "version": "1.0.0",
   "description": "Sample project with Cypress and Cucumber",
   "main": "index.js",
+  "type": "module",
   "scripts": {
-    "test": "npx cypress run --spec **/*.feature"
+    "test": "npx cypress run --spec **/*.feature",
+    "lint": "eslint . --ext .ts"
   },
   "repository": {
     "type": "git",
@@ -13,14 +15,13 @@
   "author": "Testery",
   "license": "none",
   "devDependencies": {
-    "chai": "4.3.6",
-    "cypress": "10.11.0",
-    "cypress-cucumber-preprocessor": "4.3.1",
-    "faker": "^5.5.3",
-    "seedrandom": "^3.0.5",
-    "supertest": "6.2.4"
-  },
-  "cypress-cucumber-preprocessor": {
-    "nonGlobalStepDefinitions": true
+    "@badeball/cypress-cucumber-preprocessor": "20.0.5",
+    "@bahmutov/cypress-esbuild-preprocessor": "2.2.0",
+    "@typescript-eslint/eslint-plugin": "^7.9.0",
+    "@typescript-eslint/parser": "^7.9.0",
+    "cypress": "13.9.0",
+    "esbuild": "0.21.2",
+    "eslint": "^8.57.0",
+    "typescript": "5.4.5"
   }
 }

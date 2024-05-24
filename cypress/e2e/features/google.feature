@@ -1,12 +1,6 @@
 Feature: Google
 
   @web
-  @hasDuplicate
-  Scenario: User Navigates to Google Bogus
-    Given I navigate to "https://www.google.com"
-    Then the page title is 'Google Bogus'
-
-  @web
   @duplicate
   Scenario: User Navigates to Google
     Given I navigate to "https://www.google.com"

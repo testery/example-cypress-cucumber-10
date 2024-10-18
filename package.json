@@ -6,8 +6,7 @@
   "type": "module",
   "scripts": {
     "test": "npx cypress run --spec **/*.feature",
-    "lint": "eslint . --ext .ts",
-    "testeryPreRunScript": "sudo timedatectl set-timezone EST"
+    "lint": "eslint . --ext .ts"
   },
   "repository": {
     "type": "git",

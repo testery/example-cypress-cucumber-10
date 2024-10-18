@@ -6,7 +6,8 @@
   "type": "module",
   "scripts": {
     "test": "npx cypress run --spec **/*.feature",
-    "lint": "eslint . --ext .ts"
+    "lint": "eslint . --ext .ts",
+    "testeryPreRunScript": "sudo timedatectl set-timezone EST"
   },
   "repository": {
     "type": "git",
@@ -15,13 +16,17 @@
   "author": "Testery",
   "license": "none",
   "devDependencies": {
+    "@axe-core/watcher": "^3.16.0",
     "@badeball/cypress-cucumber-preprocessor": "20.0.5",
     "@bahmutov/cypress-esbuild-preprocessor": "2.2.0",
     "@typescript-eslint/eslint-plugin": "^7.9.0",
     "@typescript-eslint/parser": "^7.9.0",
-    "cypress": "13.9.0",
+    "cypress": "13.15.0",
     "esbuild": "0.21.2",
     "eslint": "^8.57.0",
     "typescript": "5.4.5"
+  },
+  "dependencies": {
+    "dotenv": "^16.4.5"
   }
 }

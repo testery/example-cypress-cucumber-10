@@ -2,6 +2,8 @@ import { defineConfig } from "cypress";
 import createBundler from "@bahmutov/cypress-esbuild-preprocessor";
 import { addCucumberPreprocessorPlugin } from "@badeball/cypress-cucumber-preprocessor";
 import { createEsbuildPlugin } from "@badeball/cypress-cucumber-preprocessor/esbuild";
+import { cypressConfig } from '@axe-core/watcher';
+import 'dotenv/config'
 
 async function setupNodeEvents(on: Cypress.PluginEvents,config: Cypress.PluginConfigOptions): Promise<Cypress.PluginConfigOptions> {
   // This is required for the preprocessor to be able to generate JSON reports after each run, and more,
@@ -26,12 +28,18 @@ async function setupNodeEvents(on: Cypress.PluginEvents,config: Cypress.PluginCo
   return config;
 }
 
-export default defineConfig({
-  e2e: {
-    specPattern: "**/*.feature",
-    supportFile: false,
-    setupNodeEvents,
-    viewportWidth: 1920,
-    viewportHeight: 1080
-  }
-});
+
+export default defineConfig(
+  cypressConfig({
+    axe: {
+      apiKey: process.env.API_KEY
+    },
+    e2e: {
+      specPattern: "**/*.feature",
+      supportFile: false,
+      setupNodeEvents,
+      viewportWidth: 1920,
+      viewportHeight: 1080
+    }
+  })
+);

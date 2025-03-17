@@ -22,4 +22,4 @@ Then("the page title contains {string}", (title: string) => {
 When("I perform a flaky test action", () => {
   const randomValue = Math.random() < 0.5 ? 0 : 1;
   expect(randomValue).to.be.true;
-};
+});

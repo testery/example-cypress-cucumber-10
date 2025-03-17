@@ -19,6 +19,10 @@ Feature: Google
     Then the page title is 'Google Bad'
 
   @web
+  Scenario: Sample Test That Is Flaky
+    When I perform a flaky test action
+
+  @web
   Scenario Outline: Navigating to several sites
     Given I navigate to '<site>'
     Then the page title is '<title>'

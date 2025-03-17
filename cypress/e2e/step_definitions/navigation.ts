@@ -1,4 +1,4 @@
-import { Given, Then } from "@badeball/cypress-cucumber-preprocessor";
+import { Given, When, Then } from "@badeball/cypress-cucumber-preprocessor";
 import {expect} from "chai";
 
 Given("I navigate to {string}", (url: string) => {

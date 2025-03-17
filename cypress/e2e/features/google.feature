@@ -28,6 +28,6 @@ Feature: Google
     Then the page title is '<title>'
 
     Examples:
-      | site                    | title                              |
-      | https://www.apple.com/  | Apple                              |
-      | https://duckduckgo.com/ | DuckDuckGo — Privacy, simplified.  |
+      | site                    | title                                             |
+      | https://www.apple.com/  | Apple                                             |
+      | https://duckduckgo.com/ | DuckDuckGo - Protection. Privacy. Peace of mind.  |

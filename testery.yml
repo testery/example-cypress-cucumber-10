@@ -1,0 +1,11 @@
+test_selection:
+  suites:
+    - default:
+      rules:
+        - employeeRule:
+          when:
+            - src_changes:
+                - cypress/e2e/*
+          then:
+            - test_filters:
+                - cypress/e2e/features/google.feature  

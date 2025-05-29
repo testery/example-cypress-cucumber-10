@@ -15,11 +15,13 @@ jobs:
           pip install testery --upgrade
       - name: Run Testery tests
         run: |
+          echo "git-ref: ${{github.event.pull_request.head.sha}} branch: ${{ github.event.pull_request.head.ref }}"
+
           testery create-test-run \
-              --testery-dev \
-              --token "${{ secrets.TESTERY_TOKEN }}" \
-              --git-ref "${{github.event.pull_request.head.sha}}" \
-              --git-branch "${{ github.event.pull_request.head.ref }}" \
-              --project "example-cypress-cucumber-10" \
-              --environment "github-actions" \
-              --apply-test-selection-rules
+            --testery-dev \
+            --token "${{ secrets.TESTERY_TOKEN }}" \
+            --git-ref "${{github.event.pull_request.head.sha}}" \
+            --git-branch "${{ github.event.pull_request.head.ref }}" \
+            --project "example-cypress-cucumber-10" \
+            --environment "github-actions" \
+            --apply-test-selection-rules

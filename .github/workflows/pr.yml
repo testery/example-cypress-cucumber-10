@@ -16,9 +16,10 @@ jobs:
       - name: Run Testery tests
         run: |
           testery create-test-run \
+              --testery-dev \
               --token "${{ secrets.TESTERY_TOKEN }}" \
               --git-ref "${{github.event.pull_request.head.sha}}" \
               --git-branch "${{ github.event.pull_request.head.ref }}" \
               --project "example-cypress-cucumber-10" \
               --environment "github-actions" \
-              --test-suite "Green"
+              --apply-test-selection-rules

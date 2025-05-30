@@ -16,7 +16,7 @@ Feature: Google
   @willFail
   Scenario: User Navigates to Google with failure
     Given I navigate to "https://www.google.com"
-    Then the page title is 'Google Bad'
+    Then the page title is 'Google Bad Bogus'
 
   @web
   Scenario: Sample Test That Is Flaky

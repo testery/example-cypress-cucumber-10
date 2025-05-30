@@ -31,3 +31,4 @@ Feature: Google
       | site                    | title                                             |
       | https://www.apple.com/  | Apple                                             |
       | https://duckduckgo.com/ | DuckDuckGo - Protection. Privacy. Peace of mind.  |
+      | https://www.bing.com/   | Bing   a                                          |

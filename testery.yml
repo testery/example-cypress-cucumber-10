@@ -2,10 +2,17 @@ test_selection:
   suites:
     - default:
       rules:
-        - employeeRule:
+        - googleRule:
           when:
             - src_changes:
-                - cypress/e2e/*
+                - cypress/e2e/features/google.feature
           then:
             - test_filters:
-                - cypress/e2e/features/google.feature  
+                - cypress/e2e/features/google.feature
+        - googleRule2:
+          when:
+            - src_changes:
+                - cypress/e2e/features/testery.feature
+          then:
+            - test_filters:
+                - cypress/e2e/features/testery.feature                

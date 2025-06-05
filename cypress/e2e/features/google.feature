@@ -30,5 +30,6 @@ Feature: Google
     Examples:
       | site                    | title                                             |
       | https://www.apple.com/  | Apple                                             |
+      | https://www.testery.com/  | This is Great!                                             |
       | https://duckduckgo.com/ | DuckDuckGo - Protection. Privacy. Peace of mind.  |
       | https://www.bing.com/   | Bing   a                                          |

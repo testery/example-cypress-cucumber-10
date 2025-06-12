@@ -10,7 +10,7 @@ Feature: Google
   @duplicate
   Scenario: User Navigates to Google
     Given I navigate to "https://www.google.com"
-    Then the page title is 'Google Bogus'
+    Then the page title is 'Google Bogus1'
 
   @web
   @willFail

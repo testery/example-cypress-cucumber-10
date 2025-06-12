@@ -10,11 +10,4 @@ test_selection:
             - test_filters:
                 - cypress/e2e/features/google.feature
             - include_tags:
-                - web
-        - googleRule2:
-          when:
-            - src_changes:
-                - cypress/e2e/features/testery.feature
-          then:
-            - test_filters:
-                - cypress/e2e/features/testery.feature                
+                - web            

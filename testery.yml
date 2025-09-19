@@ -7,6 +7,5 @@ test_selection:
             - src_changes:
                 - cypress/e2e/features/google.feature
           then:
-            - include_tags:
-                - web
-                - testery
+            - test_filters:
+                - cypress/e2e/features/testery.feature

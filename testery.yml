@@ -8,6 +8,4 @@ test_selection:
                 - cypress/e2e/features/google.feature
           then:
             - test_filters:
-                - cypress/e2e/features/google.feature
-            - exclude_tags:
-                - duplicate
+                - [e

@@ -8,7 +8,7 @@ Feature: Google
 
   @web
   @duplicate
-  Scenario: User Navigates to Google bddada
+  Scenario: User Navigates to Google bdd
     Given I navigate to "https://www.google.com"
     Then the page title is 'Google Bogus21'
 

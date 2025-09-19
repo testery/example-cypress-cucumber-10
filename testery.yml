@@ -7,6 +7,6 @@ test_selection:
             - src_changes:
                 - cypress/e2e/features/google.feature
           then:
-            - include_tags:
+            - exclude_tags:
                 - web
                 - duplicate

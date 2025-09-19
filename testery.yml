@@ -8,4 +8,4 @@ test_selection:
                 - cypress/e2e/features/google.feature
           then:
             - test_filters:
-                - cypress/e2e/features/*
+                - cypress/e2e/features/**

@@ -8,5 +8,4 @@ test_selection:
                 - cypress/e2e/features/google.feature
           then:
             - include_tags:
-            - exclude_tags:
-            - filter_tests:
+                - web

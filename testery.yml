@@ -8,4 +8,5 @@ test_selection:
                 - cypress/e2e/features/google.feature
           then:
             - include_tags:
-                - taco
+            - exclude_tags:
+            - filter_tests:

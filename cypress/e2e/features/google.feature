@@ -10,7 +10,7 @@ Feature: Google
   @duplicate
   Scenario: User Navigates to Google
     Given I navigate to "https://www.google.com"
-    Then the page title is 'Google'
+    Then the page title is 'Google Bogus'
 
   @web
   @willFail
@@ -19,11 +19,16 @@ Feature: Google
     Then the page title is 'Google Bad'
 
   @web
+  Scenario: Sample Test That Is Flaky
+    When I perform a flaky test action
+
+  @web
   Scenario Outline: Navigating to several sites
     Given I navigate to '<site>'
     Then the page title is '<title>'
 
     Examples:
-      | site                    | title                              |
-      | https://www.apple.com/  | Apple                              |
-      | https://duckduckgo.com/ | DuckDuckGo — Privacy, simplified.  |
+      | site                    | title                                             |
+      | https://www.apple.com/  | Apple                                             |
+      | https://duckduckgo.com/ | DuckDuckGo - Protection. Privacy. Peace of mind.  |
+      | https://www.bing.com/   | Bing   a                                          |

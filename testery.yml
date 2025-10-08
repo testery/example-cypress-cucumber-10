@@ -5,7 +5,11 @@ test_selection:
         - googleRule:
           when:
             - src_changes:
-                - cypress/e2e/features/google.feature
+              - cypress/e2e/features/google.feature
           then:
             - include_tags:
-                - web
+              - web
+            - test_filters:
+              - cypress/e2e/features/google.feature
+            - excluded_tags:
+              - duplicate

@@ -1,6 +1,6 @@
 {
   "name": "example-cypress-cucumber-10",
-  "version": "1.0.0",
+  "version": "25.10.0",
   "description": "Sample project with Cypress and Cucumber",
   "main": "index.js",
   "type": "module",
@@ -15,14 +15,14 @@
   "author": "Testery",
   "license": "none",
   "devDependencies": {
-    "@badeball/cypress-cucumber-preprocessor": "20.0.5",
-    "@bahmutov/cypress-esbuild-preprocessor": "2.2.0",
-    "@typescript-eslint/eslint-plugin": "^7.9.0",
-    "@typescript-eslint/parser": "^7.9.0",
-    "chai": "^5.2.0",
-    "cypress": "13.9.0",
-    "esbuild": "0.21.2",
-    "eslint": "^8.57.0",
-    "typescript": "5.4.5"
+    "@badeball/cypress-cucumber-preprocessor": "23.2.1",
+    "@bahmutov/cypress-esbuild-preprocessor": "2.2.6",
+    "@typescript-eslint/eslint-plugin": "8.46.0",
+    "@typescript-eslint/parser": "8.46.1",
+    "chai": "6.2.0",
+    "cypress": "15.4.0",
+    "esbuild": "0.25.10",
+    "eslint": "9.37.0",
+    "typescript": "5.9.3"
   }
 }

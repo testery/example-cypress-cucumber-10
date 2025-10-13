@@ -1,3 +1,4 @@
+@green
 Feature: Testery
 
   Scenario: User Navigates to Testery

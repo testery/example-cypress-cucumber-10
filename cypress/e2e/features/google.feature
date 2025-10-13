@@ -1,6 +1,6 @@
 Feature: Google
 
-  @web
+  @web @green
   @hasDuplicate
   Scenario: User Navigates to Google
     Given I navigate to "https://www.google.com"
@@ -27,8 +27,11 @@ Feature: Google
     Given I navigate to '<site>'
     Then the page title is '<title>'
 
+    @green
     Examples:
       | site                    | title                                             |
       | https://www.apple.com/  | Apple                                             |
       | https://duckduckgo.com/ | DuckDuckGo - Protection. Privacy. Peace of mind.  |
+    Examples:
+      | site                    | title                                             |
       | https://www.bing.com/   | Bing   a                                          |

@@ -1,5 +1,5 @@
 test_stack:
-  configuration_key: node-chrome.123-java.17-nodejs.20
+  configuration_key: node-chrome.137-java.17-nodejs.24
 test_selection:
   suites:
     - default:

@@ -1,2 +1,3 @@
 - Report failing tests from Testery with ❌ and passing tests with ✅
 - This is project id 331 in Testery
+- Put the emoji for tests in front of each test instead of the top level category

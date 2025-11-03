@@ -1,0 +1,11 @@
+{
+  "permissions": {
+    "allow": [
+      "mcp__testery__list_projects",
+      "mcp__testery__list_test_runs",
+      "mcp__testery__get_test_results"
+    ],
+    "deny": [],
+    "ask": []
+  }
+}

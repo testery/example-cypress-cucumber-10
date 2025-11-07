@@ -21,8 +21,8 @@ test_selection:
               - cypress/e2e/features/testery.feature
           then:
             - include_tags:
-              - web
+              - testery
             - test_filters:
               - "regex: cypress/e2e/features/testery.*"
             - excluded_tags:
-              - duplicate
+              - willFail

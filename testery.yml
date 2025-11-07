@@ -1,3 +1,5 @@
+test_stack:
+  configuration_key: node-chrome.123-java.17-nodejs.20
 test_selection:
   suites:
     - default:
@@ -11,6 +13,16 @@ test_selection:
               - web
             - test_filters:
               - cypress/e2e/features/google.feature
+            - excluded_tags:
+              - duplicate
+        - googleRule2:
+          when:
+            - src_changes:
+              - cypress/e2e/features/testery.feature
+          then:
+            - include_tags:
+              - web
+            - test_filters:
               - "regex: cypress/e2e/features/testery.*"
             - excluded_tags:
               - duplicate

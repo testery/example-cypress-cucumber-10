@@ -1,3 +1,4 @@
+@green
 Feature: Testery
 
   @testery

@@ -29,7 +29,7 @@ Step files go in `cypress\e2e\step_definitions`.
 
 ### Config
 
-Add the following to have screenshots/video size match in Testery
+Add the following to have screenshots/video size match in Testery runner
 
 ```typescript
   on('before:browser:launch', (browser = {}, launchOptions) => {

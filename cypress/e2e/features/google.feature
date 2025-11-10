@@ -19,7 +19,7 @@ Feature: Google
     Then the page title is 'Google Bad'
 
   @web
-  Scenario: Sample Test That Is Flaky
+  Scenario: Sample Test That Is Flaky e
     When I perform a flaky test action
 
   @web
@@ -32,6 +32,3 @@ Feature: Google
       | site                    | title                                             |
       | https://www.apple.com/  | Apple                                             |
       | https://duckduckgo.com/ | DuckDuckGo - Protection. Privacy. Peace of mind.  |
-    @fail
-    Examples:
-      | https://www.bing.com/   | Bing   a                                          |

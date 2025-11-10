@@ -2,7 +2,7 @@
 Feature: Testery
 
   @willFail @testery
-  Scenario: User Navigates to TÆstery
+  Scenario: User Navigates to TÆstery 1
     Given I navigate to "https://blog.testery.io"
     Then the page title contains 'Testery test change'
 

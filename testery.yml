@@ -16,14 +16,9 @@ test_selection:
             - src_changes:
                 - cypress/e2e/features/testery.feature
           then:
-<<<<<<< HEAD
-            - test_filters:
-                - cypress/e2e/features/testery.feature                
-=======
             - include_tags:
               - testery
             - test_filters:
               - "regex: cypress/e2e/features/testery.*"
             - excluded_tags:
               - willFail
->>>>>>> 23bf403 (one change)

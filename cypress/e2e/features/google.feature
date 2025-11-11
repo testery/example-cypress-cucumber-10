@@ -32,9 +32,3 @@ Feature: Google
       | site                    | title                                             |
       | https://www.apple.com/  | Apple                                             |
       | https://duckduckgo.com/ | DuckDuckGo - Protection. Privacy. Peace of mind.  |
-<<<<<<< HEAD
-    Examples:
-      | site                    | title                                             |
-      | https://www.bing.com/   | Bing   a                                          |
-=======
->>>>>>> 78f5f16 (two changes)

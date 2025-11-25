@@ -3,7 +3,8 @@
     "allow": [
       "mcp__testery__list_projects",
       "mcp__testery__list_test_runs",
-      "mcp__testery__get_test_results"
+      "mcp__testery__get_test_results",
+      "mcp__testery__get_test_result_by_run_and_test"
     ],
     "deny": [],
     "ask": []

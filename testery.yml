@@ -11,7 +11,7 @@ test_selection:
           then:
             - test_filters:
                 - cypress/e2e/features/google.feature
-        - googleRule2:
+        - testeryRule:
           when:
             - src_changes:
                 - cypress/e2e/features/testery.feature

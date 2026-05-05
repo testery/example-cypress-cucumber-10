@@ -1,6 +1,6 @@
 # example-cypress-cucumber
 
-Sample project for running Cucumber tests via Cypress v10+
+Sample project for running Cucumber tests via Cypress v10+. Used as a Testery demo project.
 
 ## Install
 
